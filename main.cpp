@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 
     SAIS data;
     data.addChar(input, chunk_size);
-
+    free(input);
     data.makeSuffixArray();
     //std::cout << "test" << std::endl;
     //data.printSuffixArray();
